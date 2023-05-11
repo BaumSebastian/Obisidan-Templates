@@ -1,4 +1,4 @@
-Whole Title:
+Whole Title: _Can conatin special characters_
 # General Information
 _Is there any interesting author or similar?_
 Citations: 0 ({{date}})
