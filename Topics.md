@@ -11,4 +11,4 @@ _Link to other pages, where {{title}} is mentioned._
 _Papers, Websites_
 
 # Related
-_Only Hashtags_ 
+_Hashtags and links to other files_ 

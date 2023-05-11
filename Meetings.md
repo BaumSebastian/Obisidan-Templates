@@ -1,6 +1,13 @@
-|Datum| {{date}} |
+|Date| {{date}} |
 |-|-|
-|Anwesend||
+|Participant||
+|Relevant Topics||
 
-# {{title}}
+# Topic: {{title}}
 _To Discuss_
+
+## Important Points
+- 
+
+## What to do next?
+- [ ] 

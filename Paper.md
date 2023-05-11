@@ -19,4 +19,4 @@ _Link to other pages or papers, where {{title}} is mentioned._
 - _etc._
 
 # Related
-_Only Hashtags_ 
+_Hashtags and links to other files_ 
