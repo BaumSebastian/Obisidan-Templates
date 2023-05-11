@@ -1,9 +1,9 @@
 |Info| |
 |-----|----|
 |Datum|{{title}}|
-|Angefangen|07:00|
+|Angefangen|{{time}}|
 |Aufgehört|17:00|
-|Home Office| Nein|
+|Home Office|✔️❌| 
 
 ## Boards
 - [[ToDo Kanban]]
