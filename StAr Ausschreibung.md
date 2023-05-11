@@ -1,8 +1,10 @@
 ## Information
-Title: {{title}}
+Titel (deutsch): -
+Title (englisch): -
 Ausgeschrieben: {{date}}
 Bearbeiter: -
 Betreuer: -
+Co-Betreuer: -
 Arbeit: BA, FA, MA
 
 ## Themenfeld (deutsch)
