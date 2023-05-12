@@ -1,5 +1,5 @@
 ## Information
-Title: {{title}}
+#### Title: {{title}}
 Posted: {{date}}
 Student: -
 Supervisor: -
