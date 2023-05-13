@@ -1,4 +1,4 @@
-Whole Title: _Can conatin special characters_
+Whole Title: _Can contain special characters_
 # General Information
 _Is there any interesting author or similar?_
 Citations: 0 ({{date}})
@@ -18,5 +18,5 @@ _Link to other pages or papers, where {{title}} is mentioned._
 - Citavi: {{title}}
 - _etc._
 
-# Related
+# Related Topics
 _Hashtags and links to other files_ 
