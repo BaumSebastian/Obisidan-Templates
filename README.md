@@ -1,11 +1,9 @@
 # Obsidian Templates
-___
 This repository contains templates for Obsidian notes.
 - Why Obsidian: Watch following [Video](https://www.youtube.com/watch?v=QgbLb6QCK88) from [linking your thinking](https://www.youtube.com/@linkingyourthinking/featured).
 - Why Templates: Speed up your process when working with obsidian.
 
 # How to use these Templates
-___
 To use this templates:
 1. Download and install [Obsidian](https://obsidian.md/download).
 2. Create a vault and inside your vault a folder for templates location.
@@ -16,8 +14,6 @@ To use this templates:
 7. Insert the template!
 
 # Templates
-___
-
 - Daily: For daily nodes. This can be turned on automatically with: `settings` > (core plugins) `Daily notes` > `Template file location`
 - Meeting: For meetings
 - Paper: If you want to write down information about a paper
