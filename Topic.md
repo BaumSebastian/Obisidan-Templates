@@ -10,5 +10,5 @@ _Link to other pages, where {{title}} is mentioned._
 # Reference
 _Papers, Websites_
 
-# Related
+# Related Topics
 _Hashtags and links to other files_ 
