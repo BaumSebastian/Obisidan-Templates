@@ -2,6 +2,14 @@
 category: [ToDo]
 tags: [ToDo]
 date: {{date}}
-deadline: {{date}}
-status: [TODO,IN_PROGRESS,DONE,CANCELLED,NON_TASK]
+due: {{date}}
+status: [TODO,STARTED,DONE]
 ---
+
+# Definition
+_What to do?_
+
+# Sub-Steps
+
+# Remarks
+#todo 

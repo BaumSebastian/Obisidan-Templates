@@ -1,3 +1,9 @@
+---
+category: [Topic]
+tags: -
+date: {{date}}
+---
+
 # Definition of {{title}}
 _The definition of {{title}}. If wanted also insert formulas $in\ latex$ etc._
 

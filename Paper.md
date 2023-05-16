@@ -1,3 +1,9 @@
+---
+category: [Topic]
+tags: -
+date: {{date}}
+---
+
 Whole Title: _Can contain special characters_
 # General Information
 _Is there any interesting author or similar?_
