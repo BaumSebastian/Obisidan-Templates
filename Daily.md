@@ -1,7 +1,6 @@
 ---
-category:
-- note
-Type: Daily
+category: [note, daily, todo]
+type: daily
 date: {{date}}
 aliases: [{{date:DD.MM}}, {{date:dd DD.MM}}, {{date:DD.MM.YYYY}}]
 ---
