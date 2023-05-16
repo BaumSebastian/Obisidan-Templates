@@ -14,7 +14,9 @@ To use this templates:
 7. Insert the template!
 
 # Templates
-- Daily: For daily nodes. This can be turned on automatically with: `settings` > (core plugins) `Daily notes` > `Template file location`
+- Daily: For daily nodes. 
+	- This Node uses [Dataview Plugin](https://github.com/blacksmithgu/obsidian-dataview). To enable full functionality use the `#todo` tag in your notes to display them in the different Goups `Open To-Do'` (with tag) or `Open Topics` (without tags)
+	- This can be turned on automatically with: `settings` > (core plugins) `Daily notes` > `Template file location` 
 - Meeting: For meetings
 - Paper: If you want to write down information about a paper
 - Topic: If you want to write down information about a topic
