@@ -3,7 +3,8 @@ category: [ToDo]
 tags: [ToDo]
 date: {{date}}
 due: {{date}}
-status: [TODO,STARTED,DONE]
+status: 
+  - 🟡
 ---
 
 # Definition
