@@ -1,8 +1,12 @@
 ---
-category: [note, daily, todo]
 type: daily
-tags: todo
-aliases: [{{date:DD.MM}}, {{date:dd DD.MM}}, {{date:DD.MM.YYYY}}]
+tags: 
+  - todo
+date: {{date}}
+aliases: 
+- {{date:DD.MM}}
+- {{date:dd DD.MM}}
+- {{date:DD.MM.YYYY}}]
 ---
 # Daily Information:
 - Week: {{date:wo}} of 52nd
@@ -12,23 +16,27 @@ aliases: [{{date:DD.MM}}, {{date:dd DD.MM}}, {{date:DD.MM.YYYY}}]
 # To-Do
 - 
 
-# Remarks
+# Miscellaneous Notes
 - 
 
-# Open To-Do':
+# Pending Tasks:
 ```dataview
-TASK
-From #todo
-WHERE !completed AND date(file.ctime) <= date(due)
+task
+FROM #todo 
+Where !completed and
+	type != "workpackage"
+	and date(due) <= date(this.file.ctime)
+Sort due
 GROUP BY file.link
 ```
-# Open Topics
-Topics that are a unchecked task and not marked as completed.
+# Near Future Tasks':
 ```dataview
-TASK 
-FROM -#todo and -#kanban
-WHERE !completed 
-GROUP BY file.link
+Table due as Deadline, remaining as Remaining, status as Status
+FROM #todo 
+Where !completed and
+	type != "workpackage"
+	and date(due) > date(this.file.ctime)
+SORT due
 ```
 
 ___
