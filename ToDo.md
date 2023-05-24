@@ -1,16 +1,17 @@
 ---
-category: [ToDo]
-tags: [ToDo]
-date: {{date}}
-due: {{date}}
-status: 
-  - 🟡
+tags: 
+  - todo
+date: {{date:YYYY-MM-DD}}
+due: {{date:YYYY-MM-DD}}
+status: Planned
 ---
+remaining::`=date(this.due)- date(today)`
 
-# Definition
-_What to do?_
+# To Do
+_To achieve this note_
 
-# Sub-Steps
+# Resources
+_What you want to combine_
 
-# Remarks
-#todo 
+# Related Topics
+_Links to other Notes_
