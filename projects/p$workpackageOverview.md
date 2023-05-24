@@ -3,20 +3,20 @@ project: -
 start: -
 due: -
 ---
+
 # Content
-_What is this work package about?_
+_content of this work package?_
 
 ## Work packages
 ```dataview
 TABLE status, supervisor
-FROM "this.file.folder"
-WHERE contains(file.name, "{{title}}")
+FROM ""
+WHERE contains(file.name, "{{title}}.") and file.type = workpackage
 SORT file.name
 ```
-
 # Deliverables
-_What is the DoD?_
+_What are the deliverables for this work package?_
 
 # Dependencies
+_dependencies to other work packages?_
 dependencies::
-

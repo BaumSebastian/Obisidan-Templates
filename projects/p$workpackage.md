@@ -6,7 +6,7 @@ start: -
 due: -
 supervisor: -
 status: 
-  - 🟡
+  - Planned
 ---
 
 # Content
