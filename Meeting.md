@@ -1,5 +1,5 @@
 ---
-category: [Meeting]
+category: Meeting
 date: {{date}}
 project: -
 participants: -
