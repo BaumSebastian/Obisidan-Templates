@@ -20,6 +20,7 @@ _What to do?_
 
 # Deliverables
 _When is the work package done and what to deliver?_
+_Make it as a task list to be displayed on work package overview._
 
 # Dependencies
 _Dependencies to other work packages?_
