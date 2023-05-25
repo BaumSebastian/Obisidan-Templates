@@ -40,4 +40,4 @@ SORT due
 ```
 
 ___
-Note Last Modified: `=this.file.mtime`
+Last Modified: `=this.file.mtime`

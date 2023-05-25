@@ -28,3 +28,6 @@ WHERE contains(file.name, this.workpackage_identifier) and
 SORT file.name 
 GROUP BY file.link
 ```
+
+___
+Last modified: `=this.file.mtime`

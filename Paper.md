@@ -26,3 +26,6 @@ _Link to other pages or papers, where {{title}} is mentioned._
 
 # Related Topics
 _Hashtags and links to other files_ 
+
+___
+Last modified: `=this.file.mtime`

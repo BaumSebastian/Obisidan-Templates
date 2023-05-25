@@ -15,3 +15,6 @@ _Include resources, information, etc..._
 
 # Related Topics
 _Links to other notes_
+
+___
+Last modified: `=this.file.mtime`

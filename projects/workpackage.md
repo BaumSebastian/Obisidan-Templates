@@ -25,3 +25,6 @@ _Make it as a task list to be displayed on work package overview._
 # Dependencies
 _Dependencies to other work packages?_
 dependencies::
+
+___
+Last modified: `=this.file.mtime`
