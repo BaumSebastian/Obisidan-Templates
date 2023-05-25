@@ -6,11 +6,11 @@ date: {{date}}
 aliases: 
 - {{date:DD.MM}}
 - {{date:dd DD.MM}}
-- {{date:DD.MM.YYYY}}]
+- {{date:DD.MM.YYYY}}
 ---
 # Daily Information:
 - Week: {{date:wo}} of 52nd
-- Working Time: {{time}} - 17:30
+- Started: {{time}}
 - Home Office: ✔️❌
 
 # To-Do
