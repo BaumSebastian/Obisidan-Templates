@@ -8,10 +8,10 @@ status: Planned
 remaining::`=date(this.due)- date(today)`
 
 # To Do
-_To achieve this note_
+_To achieve this to do._
 
-# Resources
-_What you want to combine_
+# Additional Information
+_Include resources, information, etc..._
 
 # Related Topics
-_Links to other Notes_
+_Links to other notes_
