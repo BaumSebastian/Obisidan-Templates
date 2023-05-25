@@ -14,7 +14,8 @@ _content of these work packages?_
 ```dataview
 TABLE status as Status, supervisor as Supervisor, start as Start, due as Deadline
 WHERE contains(file.name, this.workpackage_identifier) and 
-	project = this.project 
+	project = this.project and
+	type = "workpackage" 
 SORT file.name
 ```
 
@@ -22,7 +23,8 @@ SORT file.name
 ```dataview
 TASK
 WHERE contains(file.name, this.workpackage_identifier) and 
-	project = this.project 
+	project = this.project and
+	type = "workpackage" 
 SORT file.name 
 GROUP BY file.link
 ```
