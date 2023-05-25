@@ -1,6 +1,6 @@
 ---
 category: [Topic]
-tags: -
+tags:
 date: {{date}}
 ---
 

@@ -1,7 +1,7 @@
 ---
 type: Meeting
-project: -
-place: -
+project:
+place:
 date: {{date:YYYY-MM-DD}}
 participants:
 - John Doe
