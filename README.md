@@ -18,6 +18,7 @@ To use this templates:
 3. Create a new note (`ctrl+n`)
 4. Press `ctrl+p` and search for `templates: insert template`
 5. Insert the template!
+Some templates (like [Daily Note template](##Daily)) require additional settings. This is indicated by a "Setup" section in the template.
 
 # Plugins
 There is a whole bunch of community plugins available. I highly recommend using them, as they will speed up your Obsidian-workflow. The plugins I use for these templates are:
@@ -44,7 +45,7 @@ The template "Daily" is for daily notes.
 ### Purpose
 This note purpose is to write down daily notes and give a quick overview over pending tasks and near future tasks. To use these two queries optimal, use the [todo template](ToDo.md) as it provides the todo tag as well as other information. 
 
-### Integration
+### Setup
 This can be turned on automatically with: `settings` > (core plugins) `Daily notes` > `Template file location` 
 
 
