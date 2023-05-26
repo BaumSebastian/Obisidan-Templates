@@ -31,7 +31,9 @@ The "supercharged links" plugin is optional and will do nothing until you have e
 More information can be found on my website. I will post new blog posts about Obsidian and my research in general.
 
 # Templates
-In following sections are the templates described. The template core plugin supports variables, that are also used in these templates. Varables are marked with `{{...}}` and will be replaced when inserting this template.
+This section describes the templates in detail. 
+
+The core plugin "Templates" supports variables, which are also used in these templates. Variables are marked in the template notes with `{{...}}` and will be replaced when inserting this template. More information can be found [here](https://help.obsidian.md/Plugins/Templates).
 
 ## Daily
 The template "Daily" is for daily notes.
