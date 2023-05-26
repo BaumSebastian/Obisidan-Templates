@@ -80,9 +80,20 @@ The template "Meeting" is for meeting notes.
 ### Purpose
 The purpose of this note is to record meetings. It also has a header with the most important information. The header also shows some of the metadata as well. This is because when you export the protocol as PDF, the metadata is not displayed.
 
+## ToDo
+The template "ToDo" is for to-do notes.
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional - recommended
+- [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): recommended
+### Metadata
+- `tags: - todo`: 
+  The tags metadata can contain several tags. Make sure that at least `todo` is a metadata.
+- `date: {{date}}`: 
+  Inserts the date in the format specified by the "Templates" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01"). It can also be referred as creation time with `this.file.ctime`.
+- `due`:
+  The deadline of the to-do.
+- `status`:
+  The status of the to-do. It is highly recommended to use the supercharged links plugin to display the status next to a link. See my website for more information.
+### Purpose
+The purpose of this note is to give your general to-do a note of its own. Each task in your to-do note is displayed in the daily note. You can view these tasks in your to-do note as sub-steps to achieving the main goal.
 
-- Paper: If you want to write down information about a paper
-- Topic: If you want to write down information about a topic
-- For PhDs:
-	- Student work specifications: To write down specifications about students work
-	- Student work post: To write down a post for a student work
+If you are using the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin, you can extend the sub-tasks by adding the short hand syntax supported by Dataview. It is explained [here](https://blacksmithgu.github.io/obsidian-dataview/annotation/metadata-tasks/) and supports task specific due, completion, creation, start and scheduled dates. The `due` metadata is also set in the note, but is overridden by a `due` on a specific sub-task.
