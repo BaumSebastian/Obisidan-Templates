@@ -20,12 +20,14 @@ To use this templates:
 5. Insert the template!
 
 # Plugins
-There is a whole bunch of community plugins. I highly recommend using them, as they accelerate your Obsidian-workflow. The plugins I use for these templates are:
+There is a whole bunch of community plugins available. I highly recommend using them, as they will speed up your Obsidian-workflow. The plugins I use for these templates are:
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links) (optional)
-It is not required to understand both plugins in detail, as these templates use them to automatically query the information and display it. If you stick to these templates, they work fine without big adjustments. 
+It is not necessary to understand these plugins in detail, as the templates use them to automatically. If you stick to the templates in this repository, they will work fine without much tweaking. 
 
-If you want to dive into, I will provide more information on my website (not yet). The "supercharged links" plugin is mandatory, but I highly recommend it - especially for project management templates.
+The "supercharged links" plugin is optional and will do nothing until you have everything set up. It is optional, but I highly recommend it - especially for project management templates.
+
+More information can be found on my website. I will post new blog posts about Obsidian and my research in general.
 
 # Templates
 In following sections are the templates described. The template core plugin supports variables, that are also used in these templates. Varables are marked with `{{...}}` and will be replaced when inserting this template.
