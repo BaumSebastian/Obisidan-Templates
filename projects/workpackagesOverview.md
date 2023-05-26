@@ -1,5 +1,6 @@
 ---
 project:
+description:
 tags:
 start:
 due:
@@ -24,6 +25,7 @@ SORT file.name
 ```dataview
 TASK
 WHERE contains(file.name, this.workpackage_identifier) and 
+	contains(meta(section).subpath, "Deliverables") and
 	project = this.project and
 	type = "workpackage" 
 SORT file.name 
