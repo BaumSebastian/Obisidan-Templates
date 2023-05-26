@@ -29,7 +29,7 @@ Where !completed and
 Sort due
 GROUP BY file.link
 ```
-# Near Future Tasks:
+# Upcoming Tasks:
 ```dataview
 Table due as Deadline, remaining as Remaining, status as Status
 FROM #todo 
