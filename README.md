@@ -40,15 +40,21 @@ The template "Daily" is for daily notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
 ### Meta data
-- `type: daily`: this is for filtering these notes
-- `tags: - todo`: Can contain multiple tags, but at least the tag todo, to add it to its to do list.
-- `date: {{date}}`: Inserts the date with the format specified by the daily core plugin. Default: `YYYY-MM-DD` with would result in "1970-01-01"
-- `aliases`: These are names that can also be searched with `ctrl+o`.
+- `type: daily`: 
+  This is for filtering these notes.
+- `tags: - todo`: 
+  The tags metadata can contain several tags. Make sure that at least `todo` is a metadata.
+- `date: {{date}}`: 
+  Inserts the date in the format specified by the "Daily Notes" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01")
+- `aliases`: 
+  These are aliases under which your note can be found in the search pane (`ctrl+o`).
 ### Purpose
-This note purpose is to write down daily notes and give a quick overview over pending tasks and near future tasks. To use these two queries optimal, use the [todo template](ToDo.md) as it provides the todo tag as well as other information. 
+The purpose of this note is to record daily to-dos and to provide a quick overview of pending and upcoming tasks.
+
+To display these tasks, this note uses dataviews in combination with the [todo template](ToDo.md). The most important metadata for using these dataviews is the `todo` tag.
 
 ### Setup
-This can be turned on automatically with: `settings` > (core plugins) `Daily notes` > `Template file location` 
+This template can be automatically inserted into the daily note. Check the settings of the "Daily Notes" core plugin and select this template as the "Daily Notes" template.
 
 
 - Meeting: For meetings
