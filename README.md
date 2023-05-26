@@ -39,25 +39,48 @@ The core plugin "Templates" supports variables, which are also used in these tem
 The template "Daily" is for daily notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
-### Meta data
+### Metadata
 - `type: daily`: 
   This is for filtering these notes.
 - `tags: - todo`: 
   The tags metadata can contain several tags. Make sure that at least `todo` is a metadata.
 - `date: {{date}}`: 
-  Inserts the date in the format specified by the "Daily Notes" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01")
+  Inserts the date in the format specified by the "Daily Notes" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01").
 - `aliases`: 
   These are aliases under which your note can be found in the search pane (`ctrl+o`).
 ### Purpose
 The purpose of this note is to record daily to-dos and to provide a quick overview of pending and upcoming tasks.
 
 To display these tasks, this note uses dataviews in combination with the [todo template](ToDo.md). The most important metadata for using these dataviews is the `todo` tag.
-
 ### Setup
 This template can be automatically inserted into the daily note. Check the settings of the "Daily Notes" core plugin and select this template as the "Daily Notes" template.
 
+## Meeting
+The template "Meeting" is for meeting notes.
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional
+### Metadata
+- `type: Meeting`: 
+  This is for filtering these notes.
+- `project`: 
+  The projects where this meeting is held. This will be used by [project overview template](projects/projectOverview.md).
+- `place`:
+  The place the meeting is held.
+- `duration`:
+  The duration of the meeting.
+- `date: {{date}}`: 
+  Inserts the date in the format specified by the "Templates" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01")
+- `participants`:
+  The participants of the meeting.
+- `aliases`: 
+  These are aliases under which your note can be found in the search pane (`ctrl+o`).
+- `recorder`:
+  The recorder of the meeting.
+- `protocol_ctime`:
+  The creation time of the protocol.
+### Purpose
+The purpose of this note is to record meetings. It also has a header with the most important information. The header also shows some of the metadata as well. This is because when you export the protocol as PDF, the metadata is not displayed.
 
-- Meeting: For meetings
+
 - Paper: If you want to write down information about a paper
 - Topic: If you want to write down information about a topic
 - For PhDs:
