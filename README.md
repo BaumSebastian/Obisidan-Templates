@@ -1,4 +1,4 @@
-![[obsidian_banner.png]]
+![banner](obsidian_banner.png)
 # Obsidian Templates
 This repository contains templates for Obsidian notes.
 - Why Obsidian: Watch following [Video](https://www.youtube.com/watch?v=QgbLb6QCK88) from [linking your thinking](https://www.youtube.com/@linkingyourthinking/featured).
