@@ -2,6 +2,12 @@
 project:
 tags:
 ---
+# Meetings
+```dataview
+TABLE date, duration, place
+WHERE type = "Meeting" and project = this.project
+SORT date
+```
 
 # Work packages
 _Displays all work packages of the project_
