@@ -97,3 +97,6 @@ The template "ToDo" is for to-do notes.
 The purpose of this note is to give your general to-do a note of its own. Each task in your to-do note is displayed in the daily note. You can view these tasks in your to-do note as sub-steps to achieving the main goal.
 
 If you are using the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin, you can extend the sub-tasks by adding the short hand syntax supported by Dataview. It is explained [here](https://blacksmithgu.github.io/obsidian-dataview/annotation/metadata-tasks/) and supports task specific due, completion, creation, start and scheduled dates. The `due` metadata is also set in the note, but is overridden by a `due` on a specific sub-task.
+
+___
+The sections for `Paper`, `Topic` and `Projects` will be added later as it is still under construction.
