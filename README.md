@@ -36,9 +36,8 @@ This section describes the templates in detail.
 The core plugin "Templates" supports variables, which are also used in these templates. Variables are marked in the template notes with `{{...}}` and will be replaced when inserting this template. More information can be found [here](https://help.obsidian.md/Plugins/Templates).
 
 
+## Daily
 <details>
-<summary>## Daily</summary>
-
 The template "Daily" is for daily notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
