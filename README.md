@@ -25,7 +25,7 @@ To use this templates:
 3. Create a new note (`ctrl+n`)
 4. Press `ctrl+p` and search for `templates: insert template`
 5. Insert the template!
-Some templates (like [Daily Note template](##Daily)) require additional settings. This is indicated by a "Setup" section in the template.
+Some templates (like [Daily Note template](#daily-note-template)) require additional settings. This is indicated by a "Setup" section in the template.
 
 # Plugins
 
@@ -45,7 +45,7 @@ This section describes the templates in detail.
 
 The core plugin "Templates" supports variables, which are also used in these templates. Variables are marked in the template notes with `{{...}}` and will be replaced when inserting this template. More information can be found [here](https://help.obsidian.md/Plugins/Templates).
 
-## Daily
+## Daily Note
 
 <details>
 
@@ -54,7 +54,7 @@ File: [Daily.md](Daily.md). The template "Daily" is for daily notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
 
-### Metadata
+### Metadata of Daily Note
 
 - `type: daily`:
   This is for filtering these notes.
@@ -65,19 +65,19 @@ File: [Daily.md](Daily.md). The template "Daily" is for daily notes.
 - `aliases`:
   These are aliases under which your note can be found in the search pane (`ctrl+o`).
 
-### Purpose
+### Purpose of Daily Note
 
 The purpose of this note is to record daily to-dos and to provide a quick overview of pending and upcoming tasks.
 
 To display these tasks, this note uses dataviews in combination with the [todo template](ToDo.md). The most important metadata for using these dataviews is the `todo` tag.
 
-### Setup
+### Setup of Daily Note
 
 This template can be automatically inserted into the daily note. Check the settings of the "Daily Notes" core plugin and select this template as the "Daily Notes" template.
 
 </details>
 
-## Meeting
+## Meeting Note
 
 <details>
 
@@ -85,7 +85,7 @@ File: [Meeting.md](Meeting.md). The template "Meeting" is for meeting notes.
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional
 
-### Metadata
+### Metadata of Meeting Note
 
 - `type: Meeting`:
   This is for filtering these notes.
@@ -106,13 +106,13 @@ File: [Meeting.md](Meeting.md). The template "Meeting" is for meeting notes.
 - `protocol_ctime`:
   The creation time of the protocol.
 
-### Purpose
+### Purpose of Meeting Note
 
 The purpose of this note is to record meetings. It also has a header with the most important information. The header also shows some of the metadata as well. This is because when you export the protocol as PDF, the metadata is not displayed.
 
 </details>
 
-## ToDo
+## ToDo Note
 
 <details>
 
@@ -121,7 +121,7 @@ File: [ToDo.md](ToDo.md). The template "ToDo" is for to-do notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional - recommended
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): recommended
 
-### Metadata
+### Metadata of ToDo Note
 
 - `tags: - todo`:
   The tags metadata can contain several tags. Make sure that at least `todo` is a metadata.
@@ -132,7 +132,7 @@ File: [ToDo.md](ToDo.md). The template "ToDo" is for to-do notes.
 - `status`:
   The status of the to-do. It is highly recommended to use the supercharged links plugin to display the status next to a link. See my website for more information.
 
-### Purpose
+### Purpose of ToDo Note
 
 The purpose of this note is to give your general to-do a note of its own. Each task in your to-do note is displayed in the daily note. You can view these tasks in your to-do note as sub-steps to achieving the main goal.
 
@@ -140,6 +140,28 @@ If you are using the [Dataview](https://github.com/blacksmithgu/obsidian-datavie
 
 </details>
 
+## Topic Note
+
+<details>
+
+File: [Topic.md](Topic.md). The template "Topic" is for notes about general topics.
+
+### Metadata of Topic Note
+
+- `type:`:
+- The type metadata is to define the type of topic this note is about.
+- `tags:`:
+  The tags metadata can contain several tags.
+- `date: {{date}}`:
+  Inserts the date in the format specified by the "Templates" core plugin. Default: `YYYY-MM-DD`  (result format: "1970-01-01"). It can also be referred as creation time with `this.file.ctime`.
+
+### Purpose of Topic Note
+
+The purpose of this note is to write notes about any topic.
+
+</details>
+
+
 ___
 
-The sections for `Paper`, `Topic` and `Projects` will be added later as it is still under construction.
+The sections for `Projects` will be added later as it is still under construction.
