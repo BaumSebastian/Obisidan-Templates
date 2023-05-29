@@ -1,5 +1,5 @@
 ---
-category: [Topic]
+type: 
 tags:
 date: {{date}}
 ---
