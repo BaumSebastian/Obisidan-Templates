@@ -2,7 +2,7 @@
 # Obsidian Templates
 This repository contains templates for Obsidian notes.
 - Why Obsidian: Watch following from [linking your thinking](https://www.youtube.com/@linkingyourthinking/featured):
-  ![Video](https://www.youtube.com/watch?v=QgbLb6QCK88)
+  [Video](https://www.youtube.com/watch?v=QgbLb6QCK88)
 - Why Templates: Speed up your process when working with obsidian.
 
 # How to use these Templates
@@ -35,7 +35,10 @@ This section describes the templates in detail.
 
 The core plugin "Templates" supports variables, which are also used in these templates. Variables are marked in the template notes with `{{...}}` and will be replaced when inserting this template. More information can be found [here](https://help.obsidian.md/Plugins/Templates).
 
-## Daily
+
+<details>
+<summary>## Daily</summary>
+
 The template "Daily" is for daily notes.
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
@@ -54,6 +57,8 @@ The purpose of this note is to record daily to-dos and to provide a quick overvi
 To display these tasks, this note uses dataviews in combination with the [todo template](ToDo.md). The most important metadata for using these dataviews is the `todo` tag.
 ### Setup
 This template can be automatically inserted into the daily note. Check the settings of the "Daily Notes" core plugin and select this template as the "Daily Notes" template.
+
+</details>
 
 ## Meeting
 The template "Meeting" is for meeting notes.
