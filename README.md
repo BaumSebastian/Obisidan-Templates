@@ -49,7 +49,7 @@ The core plugin "Templates" supports variables, which are also used in these tem
 
 <details>
 
-The template "Daily" is for daily notes.
+File: [Daily.md](Daily.md). The template "Daily" is for daily notes.
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): mandatory
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): optional
@@ -81,7 +81,7 @@ This template can be automatically inserted into the daily note. Check the setti
 
 <details>
 
-The template "Meeting" is for meeting notes.
+File: [Meeting.md](Meeting.md). The template "Meeting" is for meeting notes.
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional
 
@@ -116,7 +116,7 @@ The purpose of this note is to record meetings. It also has a header with the mo
 
 <details>
 
-The template "ToDo" is for to-do notes.
+File: [ToDo.md](ToDo.md). The template "ToDo" is for to-do notes.
 
 - [Dataview](https://github.com/blacksmithgu/obsidian-dataview): optional - recommended
 - [Supercharged Links](https://github.com/mdelobelle/obsidian_supercharged_links): recommended
