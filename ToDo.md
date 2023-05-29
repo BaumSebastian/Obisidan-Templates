@@ -4,13 +4,14 @@ tags:
 date: {{date:YYYY-MM-DD}}
 due: {{date:YYYY-MM-DD}}
 status: Planned
+priority: 0
 ---
 remaining::`=date(this.due)- date(today)`
 
-# To Do
+# Subtasks
 _To achieve this to do._
 
-# Additional Information
+# Comments
 _Include resources, information, etc..._
 
 # Related Topics
