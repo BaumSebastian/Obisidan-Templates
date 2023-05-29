@@ -13,7 +13,7 @@ aliases:
 - Started: {{time}}
 - Home Office: ✔️❌
 
-# To-Do
+# Daily Tasks
 - 
 
 # Miscellaneous Notes
