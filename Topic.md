@@ -4,20 +4,20 @@ tags:
 date: {{date}}
 ---
 
-# Definition of {{title}}
-_The definition of {{title}}. If wanted also insert formulas $in\ latex$ etc._
+# Key Points
+_The key points of {{title}}. If wanted also insert formulas $in\ latex$ etc._
 
-# Remarks
+# Subtopics
 _Additional information, Toughs, Pro/Contra, etc._
 
-# Usage
-_Link to other pages, where {{title}} is mentioned._
+# Personal Thoughts
+_What do you think about this topic?_
 
-# Reference
-_Papers, Websites_
+# Examples
+_Link to examples or other pages, where {{title}} is implemented._
 
-# Related Topics
-_Hashtags and links to other files_ 
+# Related Concepts
+_Papers, Websites_ 
 
 ___
 Last modified: `=this.file.mtime`

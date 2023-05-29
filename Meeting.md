@@ -22,13 +22,18 @@ protocol_ctime: {{date}}
 |Protocol created on|`=this.protocol_ctime`|
 
 # Agenda
-1. Greetings
-2. Overview about the topic 
+1. 
 
-## Important Points
+# Action Items
 - 
 
-## What to do next?
+# Discussion Points
+- 
+
+# Decisions Made
+- 
+
+# Next Steps
 - 
 
 ___
