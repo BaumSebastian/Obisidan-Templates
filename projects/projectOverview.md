@@ -79,19 +79,31 @@ let workpackages = projectpages.where( p=>
 	// Check if it is a workpackage Overview
 	p.type && p.type == "workpackage");
 
-for (let wO of workpackageOverviews){
+// Check if overviews are added
+let show_overviews = workpackageOverviews.length > 0
+let displaying_packages = workpackages
+
+if (show_overviews) {
+	displaying_packages = workpackageOverviews;
+}
+
+for (let pkg of displaying_packages){
 	// Get additional header info
 	let desc = ""
-	if (wO.description) {
-		desc = " - " + wO.description
+	if (pkg.description) {
+		desc = " - " + pkg.description
 	}
 	
 	// Heading
-	dv.header(2, wO.file.link + desc);
+	dv.header(2, pkg.file.link + desc);
 	
 	// Deliverables of the workpackage
 	dv.header(3, deliverables_headline + ":");
-	dv.taskList(workpackages.where(wp => wp.file.name.includes(wO.workpackage_identifier)).file.tasks, false);
+	if (show_overviews){
+		dv.taskList(workpackages.where(wp => wp.file.name.includes(pkg.workpackage_identifier)).file.tasks, false);
+	} else {
+		dv.taskList(pkg.file.tasks, false);
+	}
 }
 ```
 
