@@ -1,11 +1,11 @@
 ---
 project:
 description:
+type: workpackageOverview
 tags:
 start:
 due:
 status:
-type: workpackageOverview
 workpackage_identifier: 
 ---
 

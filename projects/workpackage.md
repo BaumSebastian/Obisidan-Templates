@@ -1,12 +1,12 @@
 ---
 project:
+description:
 type: workpackage
 tags: todo
 start:
 due:
-supervisor:
 status: Planned
-next:
+supervisor:
 ---
 
 # Content
