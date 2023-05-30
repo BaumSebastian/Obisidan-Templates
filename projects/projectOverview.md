@@ -54,12 +54,26 @@ WHERE type = "workpackage" and
 	project = this.project
 SORT file.name
 ```
+
 # Work package overviews
 _References the work package overviews_
 ```dataviewjs
-// variables
-let content_headline = "Content"
-let deliverables_headline = "Deliverables"
+
+// functions to show tasks under section names
+function showTasksGroupedBySection(page) {
+    let all_tasks = page.file.tasks
+    if (all_tasks.length == 0)
+    {
+        return
+    }
+
+    for (let group of all_tasks.groupBy(t => t.section)) {
+        dv.header(4, group.key)
+        dv.taskList(group.rows, false)
+    }
+}
+
+
 
 // Get all pages related to this project
 let projectpages = dv.pages().where( p =>
@@ -93,16 +107,14 @@ for (let pkg of displaying_packages){
 	if (pkg.description) {
 		desc = " - " + pkg.description
 	}
-	
-	// Heading
 	dv.header(2, pkg.file.link + desc);
 	
-	// Deliverables of the workpackage
-	dv.header(3, deliverables_headline + ":");
-	if (show_overviews){
-		dv.taskList(workpackages.where(wp => wp.file.name.includes(pkg.workpackage_identifier)).file.tasks, false);
+	// Display tasks
+	if (show_overviews)
+	{
+		showTasksGroupedBySection(workpackages.where(wp => wp.file.name.includes(pkg.workpackage_identifier)));
 	} else {
-		dv.taskList(pkg.file.tasks, false);
+		showTasksGroupedBySection(pkg);
 	}
 }
 ```
