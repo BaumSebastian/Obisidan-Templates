@@ -31,7 +31,7 @@ if (wp_all > 0){
 	dv.header(2, "Work packages status (total: "+wp_all+"):");
 	for(let key in status){
 		let wp_status = wps.where(wp => wp.status == key).length
-		dv.paragraph("Work packages " + key + status[key]+ ": " + wp_status + "/" +wp_all + " (" + Number(((wp_status /wp_all)*100).toFixed(1)) + "%)")
+		dv.paragraph(key + status[key]+ ": " + wp_status + "/" +wp_all + " (" + Number(((wp_status /wp_all)*100).toFixed(1)) + "%)")
 		}
 }
 else {
