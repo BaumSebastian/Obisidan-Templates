@@ -1,6 +1,6 @@
 ---
 type: Meeting
-project:
+project: 
 place:
 duration:
 date: {{date:YYYY-MM-DD}}
@@ -20,6 +20,15 @@ protocol_ctime: {{date}}
 |Participants|`=this.participants`|
 |Recorder|`=this.recorder`|
 |Protocol created on|`=this.protocol_ctime`|
+
+<%*
+	// Templater function to rename the file after importing it.
+	let date = tp.date.now("YYYY-MM-DD");
+
+	// Check if this Meeting is assigned to an project
+	if tp.file.content.
+	await tp.file.rename(`${date}-${title}`);
+_%>
 
 # Agenda
 1. 
