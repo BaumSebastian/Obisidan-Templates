@@ -9,7 +9,7 @@ priority: 0
 
 # Sub tasks
 _To achieve this to do._
-- [ ] 
+- [ ] Empty Sub tasks
 
 # Comments
 _Include resources, information, etc..._
