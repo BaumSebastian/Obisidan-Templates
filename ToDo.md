@@ -6,7 +6,6 @@ due: {{date:YYYY-MM-DD}}
 status: Planned
 priority: 0
 ---
-remaining::`=date(this.due)- date(today)`
 
 # Sub tasks
 _To achieve this to do._
