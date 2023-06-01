@@ -24,7 +24,7 @@ zotero_link::{{pdfZoteroLink}}
 abstract::{{abstractNote}}
 {% for relation in relations -%}
 {%- if relation.citekey -%}
-	related::{{relation.citekey}}
+	related::[[{{relation.citekey}}|{{relation.citekey}}]]
 {% endif -%}
 {%- endfor %}
 
