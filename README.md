@@ -10,6 +10,8 @@ This repository contains templates for Obsidian notes.
 
 # How to use these Templates
 
+Templates are a highly dynamic part of Obsidian and change over time. I try to keep everything working, but it can happen that really old templates may not work with newer templates.
+
 To use this templates:
 
 1. Download and install [Obsidian](https://obsidian.md/download).
