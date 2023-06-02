@@ -21,14 +21,6 @@ protocol_ctime: {{date}}
 |Recorder|`=this.recorder`|
 |Protocol created on|`=this.protocol_ctime`|
 
-<%*
-	// Templater function to rename the file after importing it.
-	let date = tp.date.now("YYYY-MM-DD");
-
-	// Check if this Meeting is assigned to an project
-	if tp.file.content.
-	await tp.file.rename(`${date}-${title}`);
-_%>
 
 # Agenda
 1. 
