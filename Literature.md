@@ -1,7 +1,7 @@
 ---
 type: paper
 aliases:
-- {{title}}
+- "{{title}}"
 - {{citekey}}
 url: {{url}}
 doi: {{doi}}
@@ -16,6 +16,7 @@ updated:
 <%*
 	// Templater function to rename the file after importing it.
 	let title = "{{title}}";
+	title = title.replace(/[/\\?%*:|"<>]/g, '-');
 	let date = tp.date.now("YYYY-MM-DD");
 	await tp.file.rename(`& ${date} ${title}`);
 _%>
@@ -29,7 +30,7 @@ abstract::{{abstractNote}}
 {%- endfor %}
 
 ```dataview
-TABLE created, updated as modified, tags, type, related
+TABLE keywords as Keywords, type as Type, related as Related
 FROM [[& <%tp.date.now("YYYY-MM-DD")%> {{title}}]]
 WHERE related != null
 ```
