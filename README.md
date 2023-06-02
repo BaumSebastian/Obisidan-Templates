@@ -161,7 +161,5 @@ The purpose of this note is to write notes about any topic.
 
 </details>
 
-
 ___
-
-The sections for `Projects` will be added later as it is still under construction.
+The `Literature` and `projects` section is under construction.
