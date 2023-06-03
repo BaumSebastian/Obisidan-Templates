@@ -31,6 +31,14 @@ protocol_ctime: {{date}}
 # Discussion Points
 - 
 
+# Requires Query
+```dataview
+List
+WHERE project = this.project and
+	type = "workpackage" and
+	status = "RequiresQuery"
+```
+
 # Decisions Made
 - 
 
