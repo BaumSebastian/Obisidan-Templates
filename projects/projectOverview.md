@@ -20,7 +20,7 @@ let status = {
 // Get all workpackages
 let wps = dv.pages().where( p=>
 	// Check if the pages has metadata 'project' and is from the same project
-	p.project && p.project == dv.current().project &&
+	p.project == dv.current().project &&
 	// Check if it is a workpackage Overview
 	p.type && p.type == "workpackage"
 	);
