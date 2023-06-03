@@ -8,7 +8,6 @@ due:
 status:
 workpackage_identifier: 
 ---
-workpackages::`$= dv.pages().where(p => p.project == dv.current().project && p.type == "workpackage" && p.file.name.includes(dv.current().workpackage_identifier)).file.link`
 
 # Content
 _content of these work packages?_
