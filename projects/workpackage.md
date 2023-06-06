@@ -15,6 +15,9 @@ _What is the content of this work package?_
 # Questions
 _Are there any open questions about this work package?_
 
+# Miscellaneous Notes
+- 
+
 # To-Do
 _What to do?_
 
