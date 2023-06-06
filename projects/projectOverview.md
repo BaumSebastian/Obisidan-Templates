@@ -40,6 +40,7 @@ dv.paragraph("No information to display")
 ```
 
 # Meetings
+_Displays all meetings of the project_
 ```dataview
 TABLE date, duration, place
 WHERE type = "Meeting" and project = this.project
