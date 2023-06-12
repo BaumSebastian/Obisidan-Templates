@@ -59,7 +59,7 @@ WHERE related != null
 
 {% for annotation in annotations -%}
 	{%- if annotation.annotatedText -%}
--   <mark class="hltr-{{annotation.colorCategory | lower }}">"{{annotation.annotatedText}}"</mark> [Page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
+	 <mark class="hltr-{{annotation.colorCategory | lower }}">"{{annotation.annotatedText}}"</mark> [Page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
 	{%- endif %}
 	{%- if annotation.imageRelativePath -%} ![[{{annotation.imageRelativePath}}]]	[Page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
 	{%- endif %}
