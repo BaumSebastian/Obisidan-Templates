@@ -1,5 +1,7 @@
 ---
 type: Meeting
+tags: 
+  - todo
 project: 
 place:
 duration:
@@ -43,7 +45,7 @@ WHERE project = this.project and
 - 
 
 # Next Steps
-- 
+- [ ] 
 
 ___
 Last modified: `=this.file.mtime`
