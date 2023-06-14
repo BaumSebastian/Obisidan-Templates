@@ -8,7 +8,7 @@ url: {{url}}
 doi: {{doi}}
 tags: 
 {%- for tag in tags %}
-- {{tag.tag}}
+- {{tag.tag | replace("-", "/") | replace (" ", "_") | replace ("_/_", "/")}}
 {%- endfor %}
 citekey: {{citekey}}
 keywords: {{allTags}}
