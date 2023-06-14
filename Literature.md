@@ -72,7 +72,7 @@ WHERE related != null
 	{%- if annotation.imageRelativePath -%} ![[{{annotation.imageRelativePath}}]]	[Page {{annotation.page}}](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.page}}&annotation={{annotation.id}})
 	{%- endif %}
 {% if annotation.comment %}
-- {{annotation.comment}}
+- <mark class="hltr-{{annotation.colorCategory | lower }}">{{annotation.comment}}</mark>
 {% endif %}
 {% endfor -%}
 # Related Concepts
