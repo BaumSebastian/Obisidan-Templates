@@ -3,6 +3,7 @@ type: paper
 aliases:
 - "{{title}}"
 - {{citekey}}
+- "{{shortTitle}}"
 url: {{url}}
 doi: {{doi}}
 tags: 
