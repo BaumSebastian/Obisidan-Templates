@@ -5,6 +5,10 @@ aliases:
 - {{citekey}}
 url: {{url}}
 doi: {{doi}}
+tags: 
+{%- for tag in tags %}
+- {{tag.tag}}
+{%- endfor %}
 citekey: {{citekey}}
 keywords: {{allTags}}
 authors: [{{authors}},{{directors}}]
