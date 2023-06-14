@@ -8,7 +8,10 @@ url: {{url}}
 doi: {{doi}}
 tags: 
 {%- for tag in tags %}
-- {{tag.tag | replace("-", "/") | replace (" ", "_") | replace ("_/_", "/")}}
+- {{tag.tag | replace("-", "/") | replace (" ", "_") | replace ("_/_", "/")
+  | replace ("Computer_Science", "CS")
+  | replace ("Artificial_Intelligence", "AI")
+  | replace ("Machine_Learning", "ML")}}
 {%- endfor %}
 citekey: {{citekey}}
 keywords: {{allTags}}
