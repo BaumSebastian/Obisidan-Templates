@@ -6,13 +6,6 @@ aliases:
 - "{{shortTitle}}"
 url: {{url}}
 doi: {{doi}}
-tags: 
-{%- for tag in tags %}
-- {{tag.tag | replace("-", "/") | replace (" ", "_") | replace ("_/_", "/")
-  | replace ("Computer_Science", "CS")
-  | replace ("Artificial_Intelligence", "AI")
-  | replace ("Machine_Learning", "ML")}}
-{%- endfor %}
 citekey: {{citekey}}
 keywords: {{allTags}}
 authors: [{{authors}},{{directors}}]
@@ -29,11 +22,6 @@ _%>
 
 zotero_link::{{pdfZoteroLink}}
 abstract::{{abstractNote}}
-{% for relation in relations -%}
-{%- if relation.citekey -%}
-	related::[[{{relation.citekey}}|{{relation.citekey}}]]
-{% endif -%}
-{%- endfor %}
 
 ```dataview
 TABLE keywords as Keywords, type as Type, related as Related
@@ -75,8 +63,13 @@ WHERE related != null
 - <mark class="hltr-{{annotation.colorCategory | lower }}">{{annotation.comment}}</mark>
 {% endif %}
 {% endfor -%}
-# Related Concepts
-_Hashtags and links to other files_ 
 
+# Related Concepts
+_Hastags and related topics_
+{% for relation in relations -%}
+{%- if relation.citekey -%}
+	related::[[{{relation.citekey}}|{{relation.citekey}}]]
+{% endif -%}
+{%- endfor %}
 ___
 Last modified: `=this.file.mtime`
