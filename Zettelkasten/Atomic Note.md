@@ -2,7 +2,7 @@
 id: "0001" # For sequence structure of the atomic notes to itself
 tags: # For realted concepts 
   -
-note_type: atomic
+zn_type: atomic
 # Both meta data below is for the "Update time on edit" plugin
 created: 
 updated: 
@@ -13,7 +13,7 @@ updated:
 	let title = tp.file.title;
 	let id = tp.frontmatter.id;
 	let date = tp.date.now("YYYY-MM-DD");
-	await tp.file.rename(`${date} ${id} ${title}`);
+	await tp.file.rename(`$⚛ {date} ${id} ${title}`);
 _%>
 
 # Body
