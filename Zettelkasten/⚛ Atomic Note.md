@@ -10,10 +10,10 @@ updated:
 
 <%*
 	// Templater function to rename the file after importing it.
-	let title = "{{title}}";
-	title = title.replace(/[/\\?%*:|"<>]/g, '-');
-	let date = tp.date.now("YYYY-MM-DD-HH-mm");
-	await tp.file.rename(`& ${date} ${title}`);
+	let title = tp.file.title;
+	let id = tp.frontmatter.id;
+	let date = tp.date.now("YYYY-MM-DD");
+	await tp.file.rename(`${date} ${id} ${title}`);
 _%>
 
 # Body
