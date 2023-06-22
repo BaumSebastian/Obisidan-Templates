@@ -1,5 +1,5 @@
 ---
-id: 0001 # For sequence structure of the atomic notes to itself
+id: "0001" # For sequence structure of the atomic notes to itself
 tags: # For realted concepts 
   -
 note_type: atomic
