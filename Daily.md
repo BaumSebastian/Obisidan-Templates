@@ -10,8 +10,11 @@ aliases:
 ---
 # Daily Information:
 - Week: {{date:wo}} of 52nd
+- Day: <% moment(tp.file.title, 'YYYY-MM-DD').format("DDD[/365]") %>
 - Started: {{time}}
 - Home Office: ✔️❌
+- Yesterdays Daily Note: [[<%tp.date.now("YYYY-MM-DD", -1)%>]]
+- Tomorrows Daily Note: [[<%tp.date.now("YYYY-MM-DD", +1)%>]]
 
 # Daily Tasks
 - 
