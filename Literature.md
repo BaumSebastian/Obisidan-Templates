@@ -10,6 +10,8 @@ citekey: {{citekey}}
 keywords: {{allTags}}
 authors: [{{authors}},{{directors}}]
 status: Planned
+created: 
+updated: 
 ---
 
 <%*

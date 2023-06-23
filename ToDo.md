@@ -5,6 +5,8 @@ date: {{date:YYYY-MM-DD}}
 due: {{date:YYYY-MM-DD}}
 status: Planned
 priority: 0
+created: 
+updated: 
 ---
 
 # Sub tasks

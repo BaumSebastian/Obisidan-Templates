@@ -2,6 +2,8 @@
 type:
 tags:
 date: {{date}}
+created: 
+updated: 
 ---
 
 # Key Points

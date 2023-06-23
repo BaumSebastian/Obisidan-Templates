@@ -14,6 +14,8 @@ aliases:
 - Meeting {{date:DD.MM.YYYY}}
 recorder: "John Doe"
 protocol_ctime: {{date}}
+created: 
+updated: 
 ---
 |Date|`=this.date`|
 |-|-|

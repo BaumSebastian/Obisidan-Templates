@@ -2,11 +2,12 @@
 type: daily
 tags: 
   - todo
-date: {{date}}
 aliases: 
 - {{date:DD.MM}}
 - {{date:dd DD.MM}}
 - {{date:DD.MM.YYYY}}
+created: 
+updated: 
 ---
 # Daily Information:
 - Week: {{date:wo}} of 52nd
