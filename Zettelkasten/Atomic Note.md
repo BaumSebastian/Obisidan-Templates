@@ -1,5 +1,7 @@
 ---
 id: "0001" # For sequence structure of the atomic notes to itself
+aliases:
+- {{title}}
 tags: # For realted concepts 
   -
 zn_type: atomic
@@ -13,7 +15,7 @@ updated:
 	let title = tp.file.title;
 	let id = tp.frontmatter.id;
 	let date = tp.date.now("YYYY-MM-DD");
-	await tp.file.rename(`$⚛ {date} ${id} ${title}`);
+	await tp.file.rename(`${date} ${id} ${title}`);
 _%>
 
 # Body
