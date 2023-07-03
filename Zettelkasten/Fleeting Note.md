@@ -18,7 +18,7 @@ updated:
 	await tp.file.rename(`${date} ${id} ${title}`);
 _%>
 
-# Body
+# {{title}}
 _There should be a 'Body' for the note - where the main content goes. Inside the body one may want to link to other content - like you see in Wikipedia._
 ⚛
 # References
