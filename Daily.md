@@ -52,6 +52,6 @@ Where status != "Done" and
 FLATTEN date(due) - date(today) as remaining
 SORT remaining and priority
 ````
-
-___
-Last Modified: `=this.file.mtime`
+# Links
+- [[<%tp.date.now("YYYY-MM-DD", -1)%>|Yesterdays Daily Note]]
+- [[<%tp.date.now("YYYY-MM-DD", +1)%>|Tomorrows Daily Note]]
