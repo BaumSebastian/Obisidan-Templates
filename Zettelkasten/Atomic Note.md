@@ -8,6 +8,7 @@ zn_type: atomic
 # Both meta data below is for the "Update time on edit" plugin
 created: 
 updated: 
+version:
 ---
 
 <%*

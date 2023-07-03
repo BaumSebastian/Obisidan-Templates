@@ -8,6 +8,7 @@ zn_type: literature
 # Both meta data below is for the "Update time on edit" plugin
 created: 
 updated: 
+version:
 ---
 
 <%*
