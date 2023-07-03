@@ -1,5 +1,5 @@
 ---
-id: "0001" # For sequence structure of the atomic notes to itself
+id: '<%tp.date.now("YYYY-MM-DD-HH-mm")%>'
 aliases:
 - {{title}}
 tags: # For realted concepts 
@@ -7,16 +7,15 @@ tags: # For realted concepts
 zn_type: atomic
 # Both meta data below is for the "Update time on edit" plugin
 created: 
-updated: 
-version:
+updated:
+version: draft
 ---
 
 <%*
 	// Templater function to rename the file after importing it.
 	let title = tp.file.title;
-	let id = tp.frontmatter.id;
-	let date = tp.date.now("YYYY-MM-DD");
-	await tp.file.rename(`${date} ${id} ${title}`);
+	let date = tp.date.now("YYYY-MM-DD-HH-mm");
+	await tp.file.rename(`${date} ${title}`);
 _%>
 
 # {{title}}
