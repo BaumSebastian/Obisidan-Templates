@@ -14,8 +14,7 @@ version: draft
 <%*
 	// Templater function to rename the file after importing it.
 	let title = tp.file.title;
-	let date = tp.date.now("YYYY-MM-DD-HH-mm");
-	await tp.file.rename(`${date} ${title}`);
+	await tp.file.rename(`${tp.date.now("YYYY-MM-DD-HH-mm")} ${title}`);
 _%>
 
 # {{title}}
