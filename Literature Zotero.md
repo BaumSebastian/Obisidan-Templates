@@ -1,4 +1,6 @@
 ---
+id: '<%tp.date.now("YYYY-MM-DD-HH-mm")%>'
+zn_type: literature
 type: paper
 aliases:
 - "{{title}}"
@@ -12,6 +14,7 @@ authors: [{{authors}},{{directors}}]
 status: Planned
 created: 
 updated: 
+version: draft
 ---
 
 <%*
