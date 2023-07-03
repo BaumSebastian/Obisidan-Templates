@@ -11,7 +11,6 @@ updated:
 doy: {{date:DDD}}
 woy: {{date:ww}}
 ---
-# Daily Information:
 # Year Overview
 `$= const value=dv.current().doy; const max = 365;"<progress value='" + value + "' max='" + max + "'></progress>" + "<span style='font-size:smaller;color:var()'>" + Math.round(100.0*value/max,2) + "%&nbsp;| &nbsp;" + parseInt(max - value) +  " days left | Week [" + dv.current().woy + "/52]</span>"`
 
