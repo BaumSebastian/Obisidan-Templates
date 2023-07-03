@@ -1,7 +1,6 @@
 ---
 type: daily
-tags: 
-  - todo
+tags:
 aliases: 
 - {{date:DD.MM}}
 - {{date:dd DD.MM}}
