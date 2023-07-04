@@ -17,7 +17,7 @@ woy: {{date:ww}}
 ### Morning Tasks
 - [ ] 
 ### Afternoon Tasks
-- [ ] Check Emails 🛫 {{date:YYYY-MM-DD}} 📅 {{date:YYYY-MM-DD}} ⏰{{date:YYYY-MM-DD}} 15:00 🔽 🔁 every day 
+- [ ] Check Emails 🛫 {{date:YYYY-MM-DD}} 📅 {{date:YYYY-MM-DD}} ⏰{{date:YYYY-MM-DD}} 15:00 🔽 
 
 
 # Task Overview
