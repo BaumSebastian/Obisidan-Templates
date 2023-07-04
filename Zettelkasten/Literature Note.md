@@ -27,4 +27,4 @@ _There should be a 'Body' for the note - where the main content goes. Inside the
 _To outside source material - if the note is a summary of other content it should reference it such as for your citations._
 
 ___
-Last Updated `=this.updated`
+Last Modified `=this.updated`
