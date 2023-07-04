@@ -17,15 +17,17 @@ woy: {{date:ww}}
 ### Morning Tasks
 - [ ] 
 ### Afternoon Tasks
-- [ ] 
+- [ ] Check Emails 🛫 {{date:YYYY-MM-DD}} 📅 {{date:YYYY-MM-DD}} ⏰{{date:YYYY-MM-DD}} 15:00 🔽 🔁 every day 
+
 
 # Task Overview
 ```dataviewjs
 const today = '2023-07-03'
+const exclude_path = "00 Obsidian Organisation" 
 const thisDay = dv.date(today).day
 
 // Get all non-completed task, just one time
-const alltasks = dv.pages()
+const alltasks = dv.pages('-"' + exclude_path + '"')
   .where(p => p.type != "workpackage")
   .file.tasks
   .where(t => !t.completed && t.text)
@@ -79,5 +81,4 @@ if (noDueTasks.length > 0){
 }
 ```
 # Links
-- [[<%tp.date.now("YYYY-MM-DD", -1)%>|Yesterdays Daily Note]]
-- [[<%tp.date.now("YYYY-MM-DD", +1)%>|Tomorrows Daily Note]]
+[[<%tp.date.now("YYYY-MM-DD", -1)%>|Yesterday]] <-> [[<%tp.date.now("YYYY-MM-DD", +1)%>|Tomorrow]]
