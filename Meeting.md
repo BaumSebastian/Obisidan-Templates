@@ -50,4 +50,4 @@ WHERE project = this.project and
 - [ ] 
 
 ___
-Last modified: `=this.file.mtime`
+Last Modified `=this.updated`

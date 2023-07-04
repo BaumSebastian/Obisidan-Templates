@@ -82,3 +82,6 @@ if (noDueTasks.length > 0){
 ```
 # Links
 [[<%tp.date.now("YYYY-MM-DD", -1)%>|Yesterday]] <-> [[<%tp.date.now("YYYY-MM-DD", +1)%>|Tomorrow]]
+
+___
+Last Modified `=this.updated`

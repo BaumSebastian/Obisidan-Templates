@@ -76,5 +76,6 @@ _Hastags and related topics_
 	related::[[{{relation.citekey}}|{{relation.citekey}}]]
 {% endif -%}
 {%- endfor %}
+
 ___
-Last modified: `=this.file.mtime`
+Last Modified `=this.updated`

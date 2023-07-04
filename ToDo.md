@@ -20,4 +20,4 @@ _Include resources, information, etc..._
 _Links to other notes_
 
 ___
-Last modified: `=this.file.mtime`
+Last Modified `=this.updated`

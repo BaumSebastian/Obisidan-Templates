@@ -22,4 +22,4 @@ _Link to examples or other pages, where {{title}} is implemented._
 _Papers, Websites_ 
 
 ___
-Last modified: `=this.file.mtime`
+Last Modified `=this.updated`
