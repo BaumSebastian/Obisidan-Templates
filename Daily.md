@@ -22,7 +22,7 @@ woy: {{date:ww}}
 
 # Task Overview
 ```dataviewjs
-const today = '2023-07-03'
+const today = '<%tp.date.now("YYYY-MM-DD")%>'
 const exclude_path = "00 Obsidian Organisation" 
 const thisDay = dv.date(today).day
 
