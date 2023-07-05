@@ -16,9 +16,12 @@ woy: {{date:ww}}
 # Daily Tasks
 ### Morning Tasks
 - [ ] 
+
 ### Afternoon Tasks
 - [ ] Check Emails 🛫 {{date:YYYY-MM-DD}} 📅 {{date:YYYY-MM-DD}} ⏰{{date:YYYY-MM-DD}} 15:00 🔽 
 
+### General Tasks
+- [ ] 
 
 # Task Overview
 ```dataviewjs
@@ -37,7 +40,7 @@ let overdueTasks = []
 let dueTasks = []
 let startingTasks = []
 let ongoingTasks = []
-let noDueTasks = []
+let noDateTasks = []
 
 // Loop through all tasks _once_, and filter them
 for (let task of alltasks) {
@@ -49,8 +52,8 @@ for (let task of alltasks) {
 	    startingTasks.push(task)
 	if (task.start && task.start.day < thisDay) 
 	    ongoingTasks.push(task)
-	if (!task.due)
-		noDueTasks.push(task)
+	if (!task.start)
+		noDateTasks.push(task)
 }
 // Display the various taskslist, _if_ they
 // have any tasks at all
@@ -75,9 +78,9 @@ if (ongoingTasks.length > 0) {
   dv.taskList(ongoingTasks, false);
 }
 
-if (noDueTasks.length > 0){
-	dv.header(3, "<u>No deadline assigned⚪️</u>")
-	dv.taskList(noDueTasks, false);
+if (noDateTasks.length > 0){
+	dv.header(3, "<u>No Start Date assigned⚪️</u>")
+	dv.taskList(noDateTasks, false);
 }
 ```
 # Links
