@@ -10,7 +10,7 @@ created:
 updated: 
 version: draft
 comment: "If you want to write something about this note"
-descripton: "One Sentence to explain the note"
+description: "One Sentence to explain the note"
 ---
 
 <%*

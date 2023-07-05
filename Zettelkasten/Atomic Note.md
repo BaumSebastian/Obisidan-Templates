@@ -7,10 +7,10 @@ tags: # For realted concepts
 zn_type: atomic
 # Both meta data below is for the "Update time on edit" plugin
 created: 
-updated:
+updated: 
 version: draft
 comment: "If you want to write something about this note"
-descripton: "One Sentence to explain the note"
+description: "One Sentence to explain the note"
 ---
 
 <%*
