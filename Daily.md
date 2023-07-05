@@ -30,7 +30,14 @@ if (moc_pages.length > 0){
 	dv.list(moc_pages)
 }
 ```
+```dataviewjs
+let po_pages = dv.pages().where(p => p.type == "project_overview" && p.project).file.link;
 
+if (po_pages.length > 0){
+	dv.header(1, "Project Overview");
+	dv.list(po_pages)
+}
+```
 # Task Overview
 ```dataviewjs
 const today = '<%tp.date.now("YYYY-MM-DD")%>'

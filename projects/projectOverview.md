@@ -1,4 +1,5 @@
 ---
+type: project_overview
 project:
 tags:
 ---
