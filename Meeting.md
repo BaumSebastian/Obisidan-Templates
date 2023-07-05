@@ -1,7 +1,6 @@
 ---
 type: Meeting
 tags: 
-  - todo
 project: 
 place:
 duration:

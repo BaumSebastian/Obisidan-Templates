@@ -1,6 +1,5 @@
 ---
 tags: 
-  - todo
 date: {{date:YYYY-MM-DD}}
 due: {{date:YYYY-MM-DD}}
 status: Planned

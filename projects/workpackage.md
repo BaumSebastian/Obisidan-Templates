@@ -2,7 +2,7 @@
 project:
 description:
 type: workpackage
-tags: todo
+tags: 
 start:
 due:
 status: Planned
