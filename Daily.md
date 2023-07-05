@@ -12,13 +12,6 @@ woy: {{date:ww}}
 ---
 # Year Overview
 `$= const value=dv.current().doy; const max = 365;"<progress value='" + value + "' max='" + max + "'></progress>" + "<span style='font-size:smaller;color:var()'>" + Math.round(100.0*value/max,2) + "%&nbsp;| &nbsp;" + parseInt(max - value) +  " days left | Week [" + dv.current().woy + "/52]</span>"`
-
-# MOC
-```dataview
-LIST
-WHERE type = "moc"
-```
-
 # Daily Tasks
 ### Morning Tasks
 - [ ] 
@@ -28,6 +21,15 @@ WHERE type = "moc"
 
 ### General Tasks
 - [ ] 
+
+```dataviewjs
+let moc_pages = dv.pages().where(p => p.type == "moc").file.link;
+
+if (moc_pages.length > 0){
+	dv.header(1, "MOC Overview");
+	dv.list(moc_pages)
+}
+```
 
 # Task Overview
 ```dataviewjs
