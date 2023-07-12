@@ -11,7 +11,7 @@ aliases:
 - Meeting {{date:DD.MM}}
 - Meeting {{date:dd DD.MM}}
 - Meeting {{date:DD.MM.YYYY}}
-recorder: "John Doe"
+recorder: John Doe
 protocol_ctime: {{date}}
 created: 
 updated: 
@@ -19,7 +19,7 @@ updated:
 |Date|`=this.date`|
 |-|-|
 |Project|`=this.project`|
-|Meeting Place|`=this.place`|
+|Meeting Place|`=this.place` - `=this.duration`|
 |Participants|`=this.participants`|
 |Recorder|`=this.recorder`|
 |Protocol created on|`=this.protocol_ctime`|
