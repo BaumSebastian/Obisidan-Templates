@@ -9,8 +9,8 @@ zn_type: atomic
 created: 
 updated: 
 version: draft
-comment: "If you want to write something about this note"
-description: "One Sentence to explain the note"
+comment: If you want to write something about this note
+description: One Sentence to explain the note
 ---
 
 <%*

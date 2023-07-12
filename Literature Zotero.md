@@ -3,9 +3,9 @@ id: '<%tp.date.now("YYYY-MM-DD-HH-mm")%>'
 zn_type: literature
 type: paper
 aliases:
-- "{{title}}"
+- {{title}}
 - {{citekey}}
-- "{{shortTitle}}"
+- {{shortTitle}}
 url: {{url}}
 doi: {{doi}}
 citekey: {{citekey}}
