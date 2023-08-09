@@ -50,10 +50,8 @@ WHERE related != null
 |Highlighted Color| Meaning|
 |-|-|
 |<mark style="background: #ADCCFFA6;">Blue</mark>|Key Points|
-|<mark style="background: #FF5582A6;">Red</mark>|Disagree with Author|
-|<mark style="background: #FFB86CA6;">Orange</mark>|Interesting Statement by Author|
-|<mark style="background: #BBFABBA6;">Green</mark>|Interesting Point (General)|
-|<mark style="background: #FFF3A3A6;">Yellow</mark>|Interesting Mathematical Concept|
+|<mark style="background: #FFB86CA6;">Orange</mark>|Disagree / Critique / Requires lookup of References|
+|<mark style="background: #BBFABBA6;">Green</mark>|Interesting Point|
 |<mark style="background: #D2B3FFA6;">Purple</mark>|Interesting Reference|
 
 {% for annotation in annotations -%}
