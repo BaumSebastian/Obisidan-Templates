@@ -1,12 +1,12 @@
 ---
-project:
+project: 
 description:
 type: workpackage
 tags: 
-start:
-due:
-group:
+start: "01.01.1970"
+due: "01.01.1970"
 status: Planned
+group:
 supervisor:
 ---
 
