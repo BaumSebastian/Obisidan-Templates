@@ -5,9 +5,8 @@ type: workpackageOverview
 tags:
 start:
 due:
-status:
+status: Planned
 group:
-workpackage_identifier: 
 ---
 
 # Content
@@ -21,7 +20,7 @@ const status_emoji = {
 	"Done" : "🟢",
 	"InProgress" : "🔵",
 	"Planned" : "🟡",
-	"RequiresQuery" : "❔",
+	"RequiresQuery" : "❓",
 	"Blocked" : "🟤",
 	"External" : "⚪"
 }
