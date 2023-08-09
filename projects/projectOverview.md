@@ -64,7 +64,7 @@ dv.paragraph("No meetings so far.")
 ```
 
 ```dataviewjs
-let project_pages = dv.pages().where(p => p.project == dv.current().project) 
+let project_pages = dv.pages().where(p => p.project == dv.current().project).sort(p => p.file.name) 
 
 // Check if overview exists
 let overview_pages = project_pages.where(p => p.type== "workpackageOverview")
