@@ -5,6 +5,7 @@ type: workpackage
 tags: 
 start:
 due:
+group:
 status: Planned
 supervisor:
 ---
