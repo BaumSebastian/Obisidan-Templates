@@ -4,120 +4,82 @@ project:
 tags:
 ---
 
-# General Information
+# Content
+_Content of this project_
+
+# Progress
 ```dataviewjs
-// variables
-
-let status = {
-	"Done":"🟢",
-	"Cancelled":"🔴", 
-	"InProgress":"🔵",
-	"Planned":"🟡",
-	"Blocked":"🟠",
-	"Dormant":"🟤",
-	"External": "⚪",
-	"RequiresQuery": "❓"}
-
-// Get all workpackages
-let wps = dv.pages().where( p=>
-	// Check if the pages has metadata 'project' and is from the same project
-	p.project == dv.current().project &&
-	// Check if it is a workpackage Overview
-	p.type && p.type == "workpackage"
-	);
-
-let wp_all = wps.length
-
-if (wp_all > 0){
-	dv.header(2, "Work packages status (total: "+wp_all+"):");
-	for(let key in status){
-		let wp_status = wps.where(wp => wp.status == key).length
-		dv.paragraph(key + status[key]+ ": " + wp_status + "/" +wp_all + " (" + Number(((wp_status /wp_all)*100).toFixed(1)) + "%)")
-		}
+const this_project = dv.current().project;
+const observed_status = ["Done","InProgress","Planned","RequiresQuery", "Blocked", "External"]
+const status_emoji = {
+	"Done" : "🟢",
+	"InProgress" : "🔵",
+	"Planned" : "🟡",
+	"RequiresQuery" : "❔",
+	"Blocked" : "🟤",
+	"External" : "⚪"
 }
-else {
-dv.paragraph("No information to display")
+
+let aps = dv.pages().where(p => p.project == this_project 
+	&& p.type == "workpackage"
+	&& p.status != "")
+
+// All arrays of interesting
+const max = aps.length
+
+for (let status of observed_status){
+	let amount_status = aps.where(ap => ap.status == status).length
+	dv.paragraph(status_emoji[status]+insertSpacesBeforeUppercase(status))
+	dv.paragraph(progressBarVisualization(amount_status, max))
+}
+
+function insertSpacesBeforeUppercase(inputString) {
+  return inputString.replace(/([A-Z])/g, ' $1');
+}
+
+function progressBarVisualization(value, max){
+	const percentage = ((value/max)*100).toFixed(1);
+	return "<progress value='" + value + "' max='" + max + "' style='color: blue;'></progress><span style='font-size: smaller'> " + percentage + "% | [" + value + "/" + max + "]</span>";
+
 }
 ```
 
 # Meetings
-_Displays all meetings of the project_
-```dataview
-TABLE date, duration, place
-WHERE type = "Meeting" and project = this.project
-SORT date
-```
-
-# Work packages
-_Displays all work packages of the project_
-```dataview
-TABLE status as Status, start as Start, due as Deadline, dependencies as Dependencies, supervisor as Supervisor
-WHERE type = "workpackage" and
-	project = this.project
-SORT file.name
-```
-
-# Work package overviews
-_References the work package overviews_
 ```dataviewjs
+let meeting_pages = dv.pages().where(p => p.project == dv.current().project && p.type == "Meeting")
 
-// functions to show tasks under section names
-function showTasksGroupedBySection(page) {
-    let all_tasks = page.file.tasks
-    if (all_tasks.length == 0)
-    {
-        return
-    }
-
-    for (let group of all_tasks.groupBy(t => t.section)) {
-        dv.header(4, group.key)
-        dv.taskList(group.rows, false)
-    }
+if (meeting_pages.length > 0){
+	dv.table(["File", "Date", "Place"],
+		meeting_pages
+		.sort(p => p.date)
+		.map(p => [p.file.link,
+			p.date,
+			p.place, 
+		]) 
+	)
 }
-
-
-
-// Get all pages related to this project
-let projectpages = dv.pages().where( p =>
-	// Check if the pages has metadata 'project'
-	p.project && 
-	// Check if the page is from the same project
-	p.project == dv.current().project
-	);
-
-// Get all workpackage overviews
-let workpackageOverviews = projectpages.where( p =>
-	// Check if it is a workpackage Overview
-	p.type && p.type == "workpackageOverview");
-
-// Get all workpackages
-let workpackages = projectpages.where( p=>
-	// Check if it is a workpackage Overview
-	p.type && p.type == "workpackage");
-
-// Check if overviews are added
-let show_overviews = workpackageOverviews.length > 0
-let displaying_packages = workpackages
-
-if (show_overviews) {
-	displaying_packages = workpackageOverviews;
-}
-
-for (let pkg of displaying_packages){
-	// Get additional header info
-	let desc = ""
-	if (pkg.description) {
-		desc = " - " + pkg.description
-	}
-	dv.header(2, pkg.file.link + desc);
-	
-	// Display tasks
-	if (show_overviews)
-	{
-		showTasksGroupedBySection(workpackages.where(wp => wp.file.name.includes(pkg.workpackage_identifier)));
-	} else {
-		showTasksGroupedBySection(pkg);
-	}
+else {
+dv.paragraph("No meetings so far.")
 }
 ```
 
+```dataviewjs
+let project_pages = dv.pages().where(p => p.project == dv.current().project) 
+
+// Check if overview exists
+let overview_pages = project_pages.where(p => p.type== "workpackageOverview")
+if (overview_pages.length > 0){
+	dv.header(1,"Groups")
+	for (let page of overview_pages){
+		dv.paragraph(page.file.link + " - " + page.description)
+	}
+}
+else {
+	dv.header(1,"Work Packages")
+	for (let page of project_pages){
+		dv.paragraph(page.file.link + " - " + page.description)
+	}
+}
+```
+___
+Last modified: `=this.file.mtime`
