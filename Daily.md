@@ -2,22 +2,28 @@
 type: daily
 tags:
 aliases: 
-- {{date:DD.MM}}
-- {{date:dd DD.MM}}
-- {{date:DD.MM.YYYY}}
+- <%tp.date.now("DD.MM")%>
+- <%tp.date.now("dd DDOb.MM")%>
+- <%tp.date.now("DD.MM.YYYY")%>
 created: 
 updated: 
-doy: {{date:DDD}}
-woy: {{date:ww}}
+doy: <%tp.date.now("DDD")%>
+woy: <%tp.date.now("ww")%>
 ---
 # Year Overview
-`$= const value=dv.current().doy; const max = 365;"<progress value='" + value + "' max='" + max + "'></progress>" + "<span style='font-size:smaller;color:var()'>" + Math.round(100.0*value/max,2) + "%&nbsp;| &nbsp;" + parseInt(max - value) +  " days left | Week [" + dv.current().woy + "/52]</span>"`
+```dataviewjs
+const value = dv.current().doy;
+const max = 365;
+
+dv.paragraph("<progress value='" + value + "' max='" + max + "'></progress>" + "<span style='font-size:smaller;color:var()'>" + Math.round(100.0*value/max,2) + "%&nbsp;| &nbsp;" + parseInt(max - value) +  " days left | Week [" + dv.current().woy + "/52]</span>")
+```
+
 # Daily Tasks
 ### Morning Tasks
 - [ ] 
 
 ### Afternoon Tasks
-- [ ] Check Emails 🛫 {{date:YYYY-MM-DD}} 📅 {{date:YYYY-MM-DD}} ⏰{{date:YYYY-MM-DD}} 15:00 🔽 
+- [ ] Check Emails 🛫 <%tp.date.now("YYYY-MM-DD")%> 📅 <%tp.date.now("YYYY-MM-DD")%> ⏰<%tp.date.now("YYYY-MM-DD")%> 15:00 🔽 
 
 ### General Tasks
 - [ ] 
@@ -99,7 +105,7 @@ if (noDateTasks.length > 0){
 }
 ```
 # Links
-[[<%tp.date.now("YYYY-MM-DD", -1)%>|Yesterday]] <-> [[<%tp.date.now("YYYY-MM-DD", +1)%>|Tomorrow]]
+[[<%tp.date.now("YYYY-MM-DD", -1)%>|Previous Note]] <-> [[<%tp.date.now("YYYY-MM-DD", +1)%>|Next Note]]
 
 ___
 Last Modified `=this.updated`
