@@ -3,7 +3,7 @@ type: daily
 tags:
 aliases: 
 - <%tp.date.now("DD.MM")%>
-- <%tp.date.now("dd DDOb.MM")%>
+- <%tp.date.now("dd DD.MM")%>
 - <%tp.date.now("DD.MM.YYYY")%>
 created: 
 updated: 
