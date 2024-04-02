@@ -23,7 +23,7 @@ dv.paragraph("<progress value='" + value + "' max='" + max + "'></progress>" + "
 - [ ] 
 
 ### Afternoon Tasks
-- [ ] Check Emails 🛫 <%tp.date.now("YYYY-MM-DD")%> 📅 <%tp.date.now("YYYY-MM-DD")%> ⏰<%tp.date.now("YYYY-MM-DD")%> 15:00 🔽 
+- [ ]
 
 ### General Tasks
 - [ ] 
